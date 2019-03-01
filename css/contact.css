@@ -1,0 +1,329 @@
+
+#contact-bg {
+	position: relative;
+	background-color: white;
+	height: 700px;
+	top: 120px;
+	border-radius: 20px;
+    min-width: 1297px;
+    overflow:hidden;
+}
+
+#contact-blurb {
+	color: white;
+	position: relative;
+	font-family: 'Oswald', cursive;
+	font-size: 19px;
+	margin-left: 90px;
+	margin-right: 90px;
+	top: 50px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#contact-title {
+	position: relative;
+	top: 20px;
+	color: white;
+	position: relative;
+	font-family: 'Lobster', cursive;
+	font-size: 80px;
+	text-align: center;
+}
+#div-line {
+	height: 5px;
+	width: 400px;
+	background-color: white;
+	border-radius: 5px;
+	position: absolute;
+	left: 18%;
+}
+
+
+
+.contact-list {
+    list-style-type: none;
+    position: relative;
+    left: 30px;
+}
+.con-icon {
+	height: 40px;
+}
+
+.c-t-1 {
+	color: white;
+	position: relative;
+	font-family: 'Arial';
+	font-size: 19px;
+	font-weight: bold;	
+	left: 20px;
+	top: 20px;
+}
+.c-t-2 {
+	color: white;
+	position: relative;
+	font-family: 'Arial';
+	font-size: 15px;
+	right: 50px;
+	top: 50px;
+	font-weight: bold;
+}
+
+#message-me-title {
+	position: relative;
+	top: 60px;
+	color: gray;
+	position: relative;
+	font-family: 'Lobster', cursive;
+	font-size: 45px;
+	text-align: center;	
+}
+ 
+/*
+from:
+https://codepen.io/atunnecliffe/pen/gpKzQw
+*/ 
+input,
+span,
+label,
+textarea {
+  position: relative;
+  bottom: 30px;
+  font-family: 'Oswald', cursive;
+  font-style: italic;
+  display: block;
+  margin: 10px;
+  margin-left: 30px;
+  padding: 5px;
+  border: none;
+  font-size: 22px;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+/* Question */
+
+input.question,
+textarea.question {
+  font-size: 18px;
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 80%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
+}
+/* Underline and Placeholder */
+
+input.question + label,
+textarea.question + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 20%;
+  border-top: 2px solid black;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 0px;
+}
+
+input.question:focus + label,
+textarea.question:focus + label {
+  width: 80%;
+}
+
+input.question:focus,
+input.question:valid {
+  padding-top: 35px;
+}
+
+textarea.question:valid,
+textarea.question:focus {
+  margin-top: 35px;
+}
+
+input.question:focus + label > span,
+input.question:valid + label > span {
+  top: -100px;
+  font-size: 22px;
+  color: #333;
+}
+
+textarea.question:focus + label > span,
+textarea.question:valid + label > span {
+  top: -150px;
+  font-size: 22px;
+  color: #333;
+}
+
+input.question:valid + label,
+textarea.question:valid + label {
+  border-color: green;
+}
+
+input.question:invalid,
+textarea.question:invalid {
+  box-shadow: none;
+}
+
+input.question + label > span,
+textarea.question + label > span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  color: #8F8F8F;
+  font-size: 28px;
+  top: -66px;
+  left: 0px;
+  z-index: -1;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+input[type="submit"] {
+  -webkit-transition: opacity 0.2s ease, background 0.2s ease;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  display: block;
+  opacity: 0;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #EEE;
+}
+
+input[type="submit"]:active {
+  background: #999;
+}
+
+input.question:valid ~ input[type="submit"], textarea.question:valid ~ input[type="submit"] {
+  -webkit-animation: appear 1s forwards;
+  animation: appear 1s forwards;
+}
+
+input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input[type="submit"] {
+  display: none;
+}
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+.example_d {
+	position: relative;
+	top: 40px;
+	font-family: 'Oswald', cursive;
+	float: left;
+	color: #2e8cab !important;
+	text-transform: uppercase;
+	background: #ffffff;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 2px solid #2e8cab !important;
+	border-radius: 6px;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.example_d:hover {
+	color: black !important;
+	border-radius: 40px;
+	border-color: black !important;
+	transition: all 0.3s ease 0s;
+}
+
+@media screen and (max-width: 1680px) {
+	#contact-bg {
+	    min-width: 1100px;
+	}  
+/*	.question {
+		bottom: -10px;
+	}*/
+	#div-line {
+		left: 19%;
+		width: 350px;
+	}	
+}
+@media screen and (max-width: 1440px) {
+	#contact-bg {
+	    min-width: 900px;
+	    top: 60px;
+	}  
+/*	.question {
+		bottom: -10px;
+	}*/
+	#div-line {
+		left: 20%;
+		top: 330px;
+		width: 300px;
+	}
+	#contact-blurb {
+		margin-right: 50px;
+		margin-left: 50px;
+	}
+
+
+}
+@media screen and (max-width: 1100px) {
+	#contact-bg {
+	    min-width: 600px;
+	}  
+/*	.question {
+		bottom: -10px;
+	}*/
+	#div-line {
+		visibility: hidden;
+	}
+	#contact-title {
+		font-size: 60px;
+	}
+	#message-me-title {
+		font-size: 30px;
+		right: 10px;
+	}	
+	#contact-blurb {
+		margin-right: 50px;
+		margin-left: 50px;
+	}
+	.contact-list {
+		position: relative;
+		bottom: 30px;
+	}
+}
+@media screen and (max-width: 950px) {
+	body {
+		overflow: none;
+	}
+	#contact-bg {
+	    min-width: 100%;
+	}  
+	.code-list {
+		left: 30%;
+	}
+	.container-1 {
+	  display: flex;
+	  flex-wrap: wrap;
+	  visibility: hidden;
+	}
+	.email-form {
+		bottom: -10px;
+	}
+
+}
