@@ -1,16 +1,14 @@
 <?php
-	// if(isset($_POST['submit'])) {
-	// 	$mailFrom = $_POST['mail'];
-	// 	$message = $_POST['message'];
 
-	// 	$mailTo = "mreid17k@gmail.com";
-	// 	$headers = "Message From: ".$mailFrom;
-	// 	$txt = "Your message: ".$message;
+		$mailFrom = $_POST['mail'];
+		$message = $_POST['message'];
 
-	// 	mail($mailTo, $headers, $txt);
-	// 	header("Location: index.php?mailsend");
+		$mailTo = "mreid17k@gmail.com";
+		$headers = "Message From: ".$mailFrom;
+		$txt = "Your message: ".$message;
 
-	// }
-	print "test";
+		mail($mailTo, $headers, $txt);
+		//header("Location: index.php?mailsend");
+	//print "test";
 
 ?>
