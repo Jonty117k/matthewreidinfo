@@ -1,9 +1,89 @@
-.getItDone {
+.portfolio-piece-1 {
+	cursor: pointer;
+	border-style: solid;
+	border-width: 14px;
+	border-color: white;
 	position: relative;
-	top: 70px;
-	height: 830px;
-	width: 502px;
-	transform: scale(.8);
+	top: 35%;
+	margin: 10px;
+	height: 500px;
+	width: 500px;
 	border-radius: 5px;
-	background: url(../images/getitdone.png); 	
+	transform: scale(.75);
+	background: url(../images/getitdone.png); 
+}
+.portfolio-piece-1:hover {
+	background: url(../images/ezgif.com-video-to-gif.gif); 
+}
+.block {
+	cursor: pointer;
+	border-style: solid;
+	border-width: 14px;
+	border-color: white;
+	position: relative;
+	top: 25%;
+	margin: 10px;
+	height: 400px;
+	width: 400px;
+	border-radius: 5px;
+}
+.portfolio-piece-2 {
+	cursor: pointer;
+	border-style: solid;
+	border-width: 14px;
+	border-color: white;
+	background-color: white;
+	position: relative;
+	top: 35%;
+	margin: 10px;
+	height: 500px;
+	width: 500px;
+	border-radius: 5px;
+	transform: scale(.75);
+	background: url(../images/thedispatch.png); 
+}
+.portfolio-piece-2:hover {
+	background: url(../images/dispatch-gif.gif); 
+}
+.portfolio-piece-3 {
+	cursor: pointer;
+	border-style: solid;
+	border-width: 14px;
+	border-color: white;
+	background-color: white;
+	position: relative;
+	top: 35%;
+	margin: 10px;
+	height: 500px;
+	width: 500px;
+	border-radius: 5px;
+	transform: scale(.75);
+}
+.pp-blurb-1 {
+	font-weight: bold;
+	border-style: solid;
+	border-width: 14px;
+	border-color: white;
+	background-color: white;
+	position: relative;
+	margin: 10px;
+	height: 120px;
+	width: 500px;
+	border-radius: 5px;
+	left: 28%;
+	top: 110px;
+}
+.pp-blurb-2 {
+	font-weight: bold;
+	border-style: solid;
+	border-width: 14px;
+	border-color: white;
+	background-color: white;
+	position: relative;
+	margin: 10px;
+	height: 120px;
+	width: 500px;
+	border-radius: 5px;
+	left: 50px;
+	top: 110px;
 }

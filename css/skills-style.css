@@ -1,6 +1,7 @@
 html, body {margin: 0; height: 100%; overflow: hidden}
 
 #skills-bg {
+	display: hidden;
 	position: relative;
 	background-color: white;
 	height: 700px;
@@ -35,6 +36,22 @@ html, body {margin: 0; height: 100%; overflow: hidden}
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+}
+#mySkills-blurb {
+	color: white;
+	position: relative;
+	font-family: 'Oswald', cursive;
+	font-size: 25px;
+	left: 40px;
+	bottom: 580px;
+  z-indexwebkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
 }
 
 #design-icon {
@@ -136,7 +153,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 	position: relative;
 	height: 200px;
 	left: 690px;
-	bottom: 625px;
+	bottom: 665px;
 	opacity: .8;
   z-indexwebkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -151,7 +168,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 	position: relative;
 	height: 500px;
 	left: 309px;
-	bottom: 685px;
+	bottom: 720px;
 	opacity: .8;
   z-indexwebkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
