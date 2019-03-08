@@ -1,5 +1,5 @@
 <?php
-
+	if(isset($_POST['submit'])) {
 		$mailFrom = $_POST['mail'];
 		$message = $_POST['message'];
 
@@ -9,6 +9,8 @@
 
 		mail($mailTo, $headers, $txt);
 		//header("Location: index.php?mailsend");
+
+	}
 	//print "test";
 
 ?>
