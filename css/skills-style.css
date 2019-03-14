@@ -249,7 +249,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 	}
 }
 
-@media (max-height: 860px) {
+/*@media (max-height: 860px) {
 	.contact {
 		transform: scale(.85);
 		position: relative;
@@ -273,8 +273,8 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 		position: relative;
 		bottom: 13%;
 	}	
-}
-@media (max-width: 1200px) and (max-height: 650px) {
+}*/
+/*@media (max-width: 1200px) and (max-height: 650px) {
 	.contact {
 		transform: scale(.65);
 		position: relative;
@@ -285,4 +285,4 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 		position: relative;
 		bottom: 18%;
 	}		
-}
+}*/

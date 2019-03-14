@@ -424,14 +424,44 @@ br {
       max-width: 1650px;
     }
 }
-@media (max-width: 1700px) and (max-height: 860px) {
+
+
+/*@media (max-width: 1665px) and (max-height: 930px) {
     .container-1 {
       transform: scale(.9);
       position: relative;
       bottom: 13%;
     }
+    #emblem-center {
+      transform: scale(1.1);
+    }
+     #myBackground {
+      max-width: 1635px;
+    }
+}*/
 
-
+@media (max-width: 1440px) and (max-height: 780px) {
+    body {
+      zoom: 80%;
+    }
+/*    .container-1 {
+      transform: scale(.75);
+      position: relative;
+      bottom: 20%;
+    }
+    #emblem-center {
+      position: relative;
+      top: 135px;
+      transform: scale(.9);
+    }
+    #myBackground {
+      max-width: 1560px;
+    }
+    .contact {
+      position: relative;
+      top: 60px;
+    }*/
+}
 /*--------------------------specific devices--------------------------------*/
 
 /*ipad*/
