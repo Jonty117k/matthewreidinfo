@@ -33,9 +33,15 @@
 				<div id="contactButton"></div>
 			</div>
 			<div class="box-3">
-				<div id="resumeButton" src=""></div>
-				<div id="linkedInButton" src=""></div>
-				<div id="gitButton" src=""></div>
+				<a href="Resume.pdf" download="Resume.pdf">
+					<div id="resumeButton" src=""></div>
+				</a>
+				<a href="https://www.linkedin.com/in/matthew-reid-90140771/">
+					<div id="linkedInButton" src=""></div>
+				</a>
+				<a href="https://github.com/Jonty117k">
+					<div id="gitButton" src=""></div>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -61,7 +67,8 @@
 							<li class="design-list">Bootstrap</li>
 							<li class="design-list">CSS Animation</li>
 						</ul>
-						<img id='gears-gif' src="images/gears_3.gif">
+						<div id="mySkills-blurb">Hi, I'm Matt. I design and develop web apps.</div>
+						<img id='gears-gif' src="images/Gears_3.gif">
 						<img id='skills-image' src="images/skills-bg.png">
 					</div>
 					<div id="skills-right-bg-1" class="col-6">
@@ -72,6 +79,8 @@
 						<br>
 						<ul class="code-list">
 							<li>Javascript</li>
+							<li>Python</li>
+							<li>Node</li>
 							<li>jQuery</li>
 							<li>React</li>
 							<li>Ajax</li>
@@ -96,37 +105,25 @@
 						<div id="div-line"></div>
 						<ul>
 							<br><br>
-							<li class="contact-list"><div class="row"><img class="con-icon" src="images/email.png"><div class="c-t-1">Email</div><div class="c-t-2" style="margin-left: 25px;">#mreid17k@gmail.com</div></div></li>
+							<li class="contact-list"><div class="row"><img class="con-icon" src="images/email.png"><div class="c-t-1">Email</div><div class="c-t-2" style="margin-left: 25px;">mreid17k@gmail.com</div></div></li>
 							<br>
-							<li class="contact-list"><div class="row"><img class="con-icon" src="images/linkedin.png"><div class="c-t-1">LinkedIn</div><div class="c-t-2">mreid17k@gmail.com</div></div></li>
-							<br>
-							<li class="contact-list"><div class="row"><img class="con-icon" src="images/behance.png" style="margin-top: 5px"><div class="c-t-1">Behance</div><div class="c-t-2">#mreid17k@gmail.com</div></div></li>
+							<li class="contact-list"><div class="row"><img class="con-icon" src="images/linkedin.png"><div class="c-t-1">LinkedIn</div><div class="c-t-2"><a id="linkedin-href" href="https://www.linkedin.com/in/matthew-reid-90140771/">my linkedin</a></div></div></li>
 							<br>
 							<li class="contact-list"><div class="row"><img class="con-icon" src="images/placeholder.png"><div class="c-t-1">Location</div><div class="c-t-2">Somerset, New Jersey</div></div></li>
 						</ul>	
 					</div>
 					<div id="skills-right-bg" class="col-6">
-					<div id="message-me-title">Send Me a Message!</div>
-					<br><br><br><br><br><br>
-					<form class="email-form" id="contact-form" method="post" action="js/contact-handler.php">
-					  <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
-					  <label for="nme"><span>Email</span></label>
-					  <br><br>
-					  <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
-					  <label for="msg"><span>Message</span></label>
-					  <input type="submit" value="Submit!" />
-					  <div class="button_cont" align="center"><a class="example_d" href="add-website-here" target="_blank" rel="nofollow noopener">Submit</a></div>
-					</form>
+					<div id="message-me-title">About Me</div>
+						<img id="my-pic" src="images/personalpic.png">
+						<div class="about" id="about-top">• I'm born and raised in central Jersey. I did my undergrad at RIT.</div>
+						<br>
+						<div class="about">• I love music. When I'm not working I'm playing, writing, or listening.</div>
+						<br>
+						<div class="about">• I also love hiking, listening to audiobooks, watching reruns of The Office (seasons 2-6), cooking funny-looking things, and drinking tea.</div>
+						<br>
+						<div class="about">• I'm in a tumultuous relationship with my New York Mets.</div>
 					</div>
 				</div>
-			</div>
-		<div class="col-1"></div>
-	</div>
-
-	<div class="row justify-content-center">
-		<div class="col-1"></div>
-			<div class="col-8 portfolio">
-				<img class="getItDone"></img>
 			</div>
 		<div class="col-1"></div>
 	</div>
@@ -143,32 +140,77 @@
 				<div class="wow animated bounceInDown" id='webdev-tag' data-wow-delay="2s">-Web Design & Development-</div>
 			</div>
 			<div id="date-text" class="wow animated bounceInDown col-1" data-wow-delay="2.5s">
-				2018
+				2019
 			</div>
 			<div class="col-1"></div>
 		</div> 
 	</div>
 
-<video autoplay muted loop id="myBackground">
-  	<source src="video/mnt-range.mp4" type="video/mp4">
-</video>
+	<div class="row justify-content-center">
+		<div class="col-sm-6"></div>
+			<div class="portfolio">
+				<div id="portfolio" class="flex-column" style="white-space: nowrap;">
+				<img class="portfolio-piece-1"></img>
+				<img class="portfolio-piece-2"></img>
+				<img class="portfolio-piece-3"></img>
+				</div>
+			</div>
+		<div class="col-sm-6"></div>
+	</div>
+	<div class="row justify-content-center">
+		<div class="col-4">
+			<div class="pp-blurb-1">
+				GetItDone is a weekly planner web application using Firebase and React. You can create an account and login anywhere to add tasks you need to complete each day of the week.
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="pp-blurb-2">
+				TheDispatch_ is a news aggregator web application. You can subscribe to news feeds such the New York Times and ESPN and api calls will return the latest news to your feed for you to read.
+			</div>
+		</div>
+		<div class="col-4"></div>
+	</div>
+
+	<video autoplay muted loop id="myBackground">
+	  	<source src="video/mnt-range.mp4" type="video/mp4">
+	</video>
 	
 </body>
 
+	<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
  	<script type="text/javascript">
+ 	$(document).ready(function() {
+	 	$('.name-tag').hide();
+		$('.webdev-tag').hide();
+		$('#skills-bg').hide();
+		$('#contact-bg').hide();
+		$('.portfolio').hide(); 	
+		$('.pp-blurb-1').hide();	
+		$('.pp-blurb-2').hide();
+
+	});
 
 	var vid = document.getElementById("myBackground");
 	vid.playbackRate = .25;
 
 	new WOW().init();
 
-	$('.name-tag').hide();
-	$('.webdev-tag').hide();
-
-	$('#skills-bg').hide();
-	$('#contact-bg').hide();
-	$('.portfolio').hide();
-
+	$('.portfolio-piece-1').mouseenter(function(){
+		$('.pp-blurb-1').addClass("active wow animated fadeInDown");
+		$(".pp-blurb-1").attr("style","visibility: visible;");
+	});
+	$('.portfolio-piece-1').mouseleave(function(){
+		$('.pp-blurb-1').removeClass("active wow animated fadeInDown");
+		$(".pp-blurb-1").attr("style","visibility: hidden;");
+	});
+	$('.portfolio-piece-2').mouseenter(function(){
+		$('.pp-blurb-2').addClass("active wow animated fadeInDown");
+		$(".pp-blurb-2").attr("style","visibility: visible;");
+	});
+	$('.portfolio-piece-2').mouseleave(function(){
+		$('.pp-blurb-2').removeClass("active wow animated fadeInDown");
+		$(".pp-blurb-2").attr("style","visibility: hidden;");
+	});	
 	$('#skillsButton').on('click', function(){
 		$('.name-tag').hide();
 		$('.active').hide();
@@ -178,11 +220,11 @@
 	});
 
 	$('#portfolioButton').on('click', function(){
-		$('.name-tag').hide();
+		$('#emblem-center').hide();
 		$('.active').hide();
 		$('.active').removeClass("active row justify-content-center");
 		$('.portfolio').addClass("active wow animated bounceInDown ");
-		$(".portfolio").attr("style","visibility: visible;");
+		$(".portfolio").attr("style","visibility: visible;");	
 	});
 
 	$('#contactButton').on('click', function(){
@@ -195,10 +237,19 @@
 
 	$('#mButton, #homeButton').on('click', function(){
 		$('.active').hide();
+		$('#emblem-center').attr("style","visibility: visible;");
 		$('.active').removeClass("active");
 		$('.name-tag').addClass("active wow animated bounceInDown");
 		$(".name-tag").attr("style","visibility: visible;");
 	});
+
+						 //  <input type="text" name="mail" class="question" id="nme" required autocomplete="off" />
+					  // <label for="nme"><span>Email</span></label>
+					  // <br><br>
+					  // <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
+					  // <label for="msg"><span>Message</span></label>
+					  // <input type="submit" value="submit" />
+
 
  	</script>
 </html>

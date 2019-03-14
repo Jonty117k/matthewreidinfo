@@ -424,7 +424,11 @@ br {
       max-width: 1650px;
     }
 }
-
+@media screen and (max-width: 1080px) {
+    #emblem-center {
+      position: absolute;
+    }
+}
 @media (max-width: 1700px) and (max-height: 860px) {
     .container-1 {
       transform: scale(.9);
@@ -474,14 +478,14 @@ br {
 /*--------------------------specific devices--------------------------------*/
 
 /*ipad*/
-@media (device-width: 1024px) and (device-height: 768px) {
+/*@media (device-width: 1024px) and (device-height: 768px) {
     .container-1 {
       position: fixed;
       bottom: 30px;
     }
 }
-
+*/
 /*iphone5*/
-@media (device-width: 320px) and (device-height: 568px) {
+/*@media (device-width: 320px) and (device-height: 568px) {
     
-}
+}*/

@@ -1,6 +1,7 @@
 html, body {margin: 0; height: 100%; overflow: hidden}
 
 #skills-bg {
+	display: hidden;
 	position: relative;
 	background-color: white;
 	height: 700px;
@@ -28,6 +29,22 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 	font-family: 'Lobster', cursive;
 	font-size: 80px;
 	left: 20px;
+  z-indexwebkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#mySkills-blurb {
+	color: white;
+	position: relative;
+	font-family: 'Oswald', cursive;
+	font-size: 25px;
+	left: 40px;
+	bottom: 580px;
   z-indexwebkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -106,7 +123,6 @@ html, body {margin: 0; height: 100%; overflow: hidden}
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
-
 }
 
 .design-list {
@@ -136,7 +152,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 	position: relative;
 	height: 200px;
 	left: 690px;
-	bottom: 625px;
+	bottom: 665px;
 	opacity: .8;
   z-indexwebkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -151,7 +167,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 	position: relative;
 	height: 500px;
 	left: 309px;
-	bottom: 685px;
+	bottom: 720px;
 	opacity: .8;
   z-indexwebkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -168,13 +184,13 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 	}  
 	#gears-gif {
 		height: 200px;
-		bottom: 535px;
+		bottom: 575px;
 		left: 580px;
 	}
 	#skills-image {
 		height: 400px;
 		left: 279px;
-		bottom: 585px;
+		bottom: 623px;
 	}
 	.code-list {
 		left: 270px;
@@ -183,45 +199,56 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 @media screen and (max-width: 1440px) {
 	#skills-bg {
 	    min-width: 600px;
-	    top: 60px;
 	}  
 	#gears-gif {
-		visibility: hidden;
+		height: 200px;
+		bottom: 515px;
+		left: 420px;
 	}
 	#skills-image {
-		visibility: hidden;
+		height: 340px;
+		left: 204px;
+		bottom: 556px;
+		transform: scaleX(.7);
 	}
 	.code-list {
-		left: 195px;
+		left: 155px;
+	}
+	#mySkills-blurb {
+		font-size: 20px;
 	}
 }
-@media screen and (max-width: 1101px) {
+@media screen and (max-width: 1100px) {
 	#skills-bg {
 	    min-width: 600px;
 	}  
+	#gears-gif {
+		height: 60px;
+		visibility: hidden;
+	}
 	#skills-image {
 		visibility: hidden;
 	}
 	.code-list {
-		left: 195px;
+		left: 80px;
 	}
 }
-@media screen and (max-width: 901px) {
+@media screen and (max-width: 950px) {
 	#skills-bg {
 	    min-width: 100%;
 	}  
+	#gears-gif {
+		height: 60px;
+		visibility: hidden;
+	}
 	#skills-image {
 		visibility: hidden;
 	}
 	.code-list {
-		left: 30%;
-	}
-	.container-1 {
-	  display: flex;
-	  flex-wrap: wrap;
-	  visibility: hidden;
+		right: 200px;
 	}
 }
+
 @media (max-height: 860px) {
 	.contact {
 		transform: scale(.85);
