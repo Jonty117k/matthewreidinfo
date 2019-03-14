@@ -1,9 +1,139 @@
-.getItDone {
+.portfolio-piece-1 {
+	cursor: pointer;
+	border-style: solid;
+	border-width: 14px;
+	border-color: white;
 	position: relative;
-	top: 70px;
-	height: 830px;
-	width: 502px;
-	transform: scale(.8);
+	top: 35%;
+	margin: 10px;
+	height: 500px;
+	width: 500px;
 	border-radius: 5px;
-	background: url(../images/getitdone.png); 	
+	transform: scale(.75);
+	background: url(../images/getitdone.png); 
+	display: inline-block;
 }
+.portfolio-piece-1:hover {
+	background: url(../images/ezgif.com-video-to-gif.gif); 
+}
+.block {
+	cursor: pointer;
+	border-style: solid;
+	border-width: 14px;
+	border-color: white;
+	position: relative;
+	top: 25%;
+	margin: 10px;
+	height: 400px;
+	width: 400px;
+	border-radius: 5px;
+}
+.portfolio-piece-2 {
+	cursor: pointer;
+	border-style: solid;
+	border-width: 14px;
+	border-color: white;
+	background-color: white;
+	position: relative;
+	top: 35%;
+	margin: 10px;
+	height: 500px;
+	width: 500px;
+	border-radius: 5px;
+	transform: scale(.75);
+	background: url(../images/thedispatch.png); 
+	display: inline-block;
+}
+.portfolio-piece-2:hover {
+	background: url(../images/dispatch-gif.gif); 
+}
+.portfolio-piece-3 {
+	cursor: pointer;
+	border-style: solid;
+	border-width: 14px;
+	border-color: white;
+	background-color: white;
+	position: relative;
+	top: 35%;
+	margin: 10px;
+	height: 500px;
+	width: 500px;
+	border-radius: 5px;
+	transform: scale(.75);
+	display: inline-block;
+}
+.pp-blurb-1 {
+	font-weight: bold;
+	border-style: solid;
+	border-width: 14px;
+	border-color: white;
+	background-color: white;
+	position: relative;
+	margin: 10px;
+	height: 120px;
+	width: 500px;
+	border-radius: 5px;
+	left: 28%;
+	top: 110px;
+}
+.pp-blurb-2 {
+	font-weight: bold;
+	border-style: solid;
+	border-width: 14px;
+	border-color: white;
+	background-color: white;
+	position: relative;
+	margin: 10px;
+	height: 120px;
+	width: 500px;
+	border-radius: 5px;
+	left: 50px;
+	top: 110px;
+}
+#portfolio {
+	position: relative;
+	top: 33%;
+}
+
+@media screen and (max-width: 1680px) {
+	.portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
+		transform: scale(.60);
+	}
+	.portfolio-piece-1 {
+		left: 100px;
+	}
+	.portfolio-piece-3 {
+		right: 100px;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
+		transform: scale(.50);
+	}
+	.portfolio-piece-1 {
+		left: 180px;
+	}
+	.portfolio-piece-3 {
+		right: 180px;
+	}
+	.pp-blurb-2 {
+
+	}
+}
+
+@media screen and (max-width: 1101px) {
+	.portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
+		transform: scale(.50);
+	}
+	.portfolio-piece-1 {
+		left: 230px;
+	}
+	.portfolio-piece-3 {
+		right: 230px;
+	}
+	#emblem-center {
+		transform: scale(1.1);
+	}
+}
+
