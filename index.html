@@ -151,7 +151,7 @@
 	<div class="row justify-content-center">
 		<div class="col-sm-6"></div>
 			<div class="portfolio">
-				<div id="portfolio" class="flex-column" style="white-space: nowrap;">
+				<div id="portfolio-bg" class="flex-column" style="white-space: nowrap;">
 				<img class="portfolio-piece-1"></img>
 				<img class="portfolio-piece-2"></img>
 				<img class="portfolio-piece-3"></img>
@@ -185,12 +185,14 @@
  	$(document).ready(function() {
 	 	$('.name-tag').hide();
 		$('.webdev-tag').hide();
-		$('#skills-bg').hide();
+		// $('#skills-bg').hide();
 		$('#contact-bg').hide();
 		$('.portfolio').hide(); 	
 		$('.pp-blurb-1').hide();	
 		$('.pp-blurb-2').hide();
 	});
+
+
 
 	var vid = document.getElementById("myBackground");
 	vid.playbackRate = .25;
@@ -199,26 +201,26 @@
 
 	$('.portfolio-piece-1').mouseenter(function(){
 		$('.pp-blurb-1').addClass("active wow animated fadeInDown");
-		$(".pp-blurb-1").attr("style","visibility: visible;");
+		$(".pp-blurb-1").css('display', 'block');
 	});
 	$('.portfolio-piece-1').mouseleave(function(){
 		$('.pp-blurb-1').removeClass("active wow animated fadeInDown");
-		$(".pp-blurb-1").attr("style","visibility: hidden;");
+		$(".pp-blurb-1").css('display', 'none');
 	});
 	$('.portfolio-piece-2').mouseenter(function(){
 		$('.pp-blurb-2').addClass("active wow animated fadeInDown");
-		$(".pp-blurb-2").attr("style","visibility: visible;");
+		$(".pp-blurb-2").css('display', 'block');
 	});
 	$('.portfolio-piece-2').mouseleave(function(){
 		$('.pp-blurb-2').removeClass("active wow animated fadeInDown");
-		$(".pp-blurb-2").attr("style","visibility: hidden;");
+		$(".pp-blurb-2").css('display', 'none');
 	});	
 	$('#skillsButton').on('click', function(){
 		$('.name-tag').hide();
 		$('.active').hide();
 		$('.active').removeClass("active row justify-content-center");
 		$('#skills-bg').addClass("active wow animated bounceInDown ");
-		$("#skills-bg").attr("style","visibility: visible;");
+		$("#skills-bg").css("display", "block");
 	});
 
 	$('#portfolioButton').on('click', function(){
@@ -227,14 +229,15 @@
 		$('.active').removeClass("active row justify-content-center");
 		$('.portfolio').addClass("active wow animated bounceInDown ");
 		$(".portfolio").attr("style","visibility: visible;");	
+		$('.portfolio').css("display", "block");
+		$('#portfolio').css("display", "block");
 	});
 
 	$('#contactButton').on('click', function(){
 		$('.name-tag').hide();
 		$('.active').hide();
 		$('.active').removeClass("active");
-		$('#contact-bg').addClass("active wow animated bounceInDown");
-		$("#contact-bg").attr("style","visibility: visible;");
+		$('#contact-bg').addClass("active wow animated bounceInDown").css("display", "block");
 	});
 
 	$('#mButton, #homeButton').on('click', function(){
