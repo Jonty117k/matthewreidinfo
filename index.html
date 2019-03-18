@@ -189,52 +189,72 @@
 	new WOW().init();
 
 	$('.portfolio-piece-1').mouseenter(function(){
-		$('.pp-blurb-1').addClass("active wow animated fadeInDown");
-		$(".pp-blurb-1").css('display', 'block');
+		$('.pp-blurb-1')
+			.addClass("active wow animated fadeInDown")
+			.css('display', 'block')
+		;
 	});
 	$('.portfolio-piece-1').mouseleave(function(){
-		$('.pp-blurb-1').removeClass("active wow animated fadeInDown");
-		$(".pp-blurb-1").css('display', 'none');
+		$('.pp-blurb-1')
+			.removeClass("active wow animated fadeInDown")
+			.css('display', 'none')
+		;
 	});
 	$('.portfolio-piece-2').mouseenter(function(){
-		$('.pp-blurb-2').addClass("active wow animated fadeInDown");
-		$(".pp-blurb-2").css('display', 'block');
+		$('.pp-blurb-2')
+			.addClass("active wow animated fadeInDown")
+			.css('display', 'block')
+		;
 	});
 	$('.portfolio-piece-2').mouseleave(function(){
-		$('.pp-blurb-2').removeClass("active wow animated fadeInDown");
-		$(".pp-blurb-2").css('display', 'none');
+		$('.pp-blurb-2')
+			.removeClass("active wow animated fadeInDown")
+			.css('display', 'none')
+		;
 	});	
 	$('#skillsButton').on('click', function(){
-		$('.name-tag').hide();
-		$('.active').hide();
-		$('.active').removeClass("active row justify-content-center");
-		$('#skills-bg').addClass("active wow animated bounceInDown ");
-		$("#skills-bg").css("display", "block");
+		$('.active')
+			.hide()
+			.removeClass("active row justify-content-center")
+		;
+		$('#skills-bg')
+			.addClass("active wow animated bounceInDown ")
+			.css("display", "block")
+		;
 	});
 
 	$('#portfolioButton').on('click', function(){
 		$('#emblem-center').hide();
-		$('.active').hide();
-		$('.active').removeClass("active row justify-content-center");
-		$('.portfolio').addClass("active wow animated bounceInDown ");
-		$(".portfolio").attr("style","visibility: visible;");	
-		$('.portfolio').css("display", "block");
-		$('#portfolio').css("display", "block");
+		$('.active')
+			.hide()
+			.removeClass("active row justify-content-center")
+		;
+		$('.portfolio')
+			.addClass("active wow animated bounceInDown ")
+			.css("display", "block")
+		;
 	});
 
 	$('#contactButton').on('click', function(){
 		$('.name-tag').hide();
-		$('.active').hide();
-		$('.active').removeClass("active");
-		$('#contact-bg').addClass("active wow animated bounceInDown").css("display", "block");
+		$('.active')
+			.hide()
+			.removeClass("active")
+		;
+		$('#contact-bg')
+			.addClass("active wow animated bounceInDown")
+			.css("display", "block")
+		;
 	});
 
 	$('#mButton, #homeButton').on('click', function(){
 		$('.active').hide();
 		$('#emblem-center').attr("style","visibility: visible;");
 		$('.active').removeClass("active");
-		$('.name-tag').addClass("active wow animated bounceInDown");
-		$(".name-tag").attr("style","visibility: visible;");
+		$('.name-tag')
+			.addClass("active wow animated bounceInDown")
+			.attr("style","visibility: visible;")
+		;
 	});
 
 						 //  <input type="text" name="mail" class="question" id="nme" required autocomplete="off" />
