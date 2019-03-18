@@ -7,6 +7,7 @@
 	border-radius: 20px;
     min-width: 1297px;
     overflow:hidden;
+    display:none;
 }
 
 #my-pic {

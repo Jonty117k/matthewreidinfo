@@ -7,6 +7,7 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/skills-style.css" rel="stylesheet">
     <link href="css/contact.css" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -18,6 +19,7 @@
 
 </head>
 <body>
+	<!-- Navigation Sidebar -->
 	<div class=" wow animated bounceInRight " data-wow-delay="2s" id="myNav">	
 		<div class="container-1">
 			<div class="box-1">
@@ -45,7 +47,7 @@
 			</div>
 		</div>
 	</div>
-
+	<!-- Skills modal -->
 	<div class="skills row justify-content-center">
 		<div></div>
 			<div id="skills-bg">
@@ -91,7 +93,7 @@
 				</div>
 			</div>
 	</div>
-
+	<!-- Contact Modal -->
 	<div class="contact row justify-content-center">
 		<div class="col-1"></div>
 			<div id="contact-bg" class="col-8">
@@ -127,7 +129,7 @@
 			</div>
 		<div class="col-1"></div>
 	</div>
-
+	<!-- Logo + Sprites -->
 	<div id="emblem-center" class="row justify-content-center">
 	  	<div id="name" class="row justify-content-center">
 	  		<div class="col-1">
@@ -145,11 +147,11 @@
 			<div class="col-1"></div>
 		</div> 
 	</div>
-
+	<!-- Portfolio modal -->
 	<div class="row justify-content-center">
 		<div class="col-sm-6"></div>
 			<div class="portfolio">
-				<div id="portfolio" class="flex-column" style="white-space: nowrap;">
+				<div id="portfolio-bg" class="flex-column" style="white-space: nowrap;">
 				<img class="portfolio-piece-1"></img>
 				<img class="portfolio-piece-2"></img>
 				<img class="portfolio-piece-3"></img>
@@ -171,25 +173,15 @@
 		<div class="col-4"></div>
 	</div>
 
-
+	<!-- background -->
 	<video autoplay muted loop id="myBackground">
 	  	<source src="video/mnt-range.mp4" type="video/mp4">
-	</video>
-	
+	</video>	
 </body>
 
-	<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
- 	<script type="text/javascript">
- 	$(document).ready(function() {
-	 	$('.name-tag').hide();
-		$('.webdev-tag').hide();
-		$('#skills-bg').hide();
-		$('#contact-bg').hide();
-		$('.portfolio').hide(); 	
-		$('.pp-blurb-1').hide();	
-		$('.pp-blurb-2').hide();
-
-	});
+<!--firebase -->
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+<script type="text/javascript">
 
 	var vid = document.getElementById("myBackground");
 	vid.playbackRate = .25;
@@ -197,60 +189,72 @@
 	new WOW().init();
 
 	$('.portfolio-piece-1').mouseenter(function(){
-		$('.pp-blurb-1').addClass("active wow animated fadeInDown");
-		$(".pp-blurb-1").attr("style","visibility: visible;");
+		$('.pp-blurb-1')
+			.addClass("active wow animated fadeInDown")
+			.css('display', 'block')
+		;
 	});
 	$('.portfolio-piece-1').mouseleave(function(){
-		$('.pp-blurb-1').removeClass("active wow animated fadeInDown");
-		$(".pp-blurb-1").attr("style","visibility: hidden;");
+		$('.pp-blurb-1')
+			.removeClass("active wow animated fadeInDown")
+			.css('display', 'none')
+		;
 	});
 	$('.portfolio-piece-2').mouseenter(function(){
-		$('.pp-blurb-2').addClass("active wow animated fadeInDown");
-		$(".pp-blurb-2").attr("style","visibility: visible;");
+		$('.pp-blurb-2')
+			.addClass("active wow animated fadeInDown")
+			.css('display', 'block')
+		;
 	});
 	$('.portfolio-piece-2').mouseleave(function(){
-		$('.pp-blurb-2').removeClass("active wow animated fadeInDown");
-		$(".pp-blurb-2").attr("style","visibility: hidden;");
+		$('.pp-blurb-2')
+			.removeClass("active wow animated fadeInDown")
+			.css('display', 'none')
+		;
 	});	
 	$('#skillsButton').on('click', function(){
-		$('.name-tag').hide();
-		$('.active').hide();
-		$('.active').removeClass("active row justify-content-center");
-		$('#skills-bg').addClass("active wow animated bounceInDown ");
-		$("#skills-bg").attr("style","visibility: visible;");
+		$('.active')
+			.hide()
+			.removeClass("active row justify-content-center")
+		;
+		$('#skills-bg')
+			.addClass("active wow animated bounceInDown ")
+			.css("display", "block")
+		;
 	});
 
 	$('#portfolioButton').on('click', function(){
 		$('#emblem-center').hide();
-		$('.active').hide();
-		$('.active').removeClass("active row justify-content-center");
-		$('.portfolio').addClass("active wow animated bounceInDown ");
-		$(".portfolio").attr("style","visibility: visible;");	
+		$('.active')
+			.hide()
+			.removeClass("active row justify-content-center")
+		;
+		$('.portfolio')
+			.addClass("active wow animated bounceInDown ")
+			.css("display", "block")
+		;
 	});
 
 	$('#contactButton').on('click', function(){
 		$('.name-tag').hide();
-		$('.active').hide();
-		$('.active').removeClass("active");
-		$('#contact-bg').addClass("active wow animated bounceInDown");
-		$("#contact-bg").attr("style","visibility: visible;");
+		$('.active')
+			.hide()
+			.removeClass("active")
+		;
+		$('#contact-bg')
+			.addClass("active wow animated bounceInDown")
+			.css("display", "block")
+		;
 	});
 
 	$('#mButton, #homeButton').on('click', function(){
 		$('.active').hide();
 		$('#emblem-center').attr("style","visibility: visible;");
 		$('.active').removeClass("active");
-		$('.name-tag').addClass("active wow animated bounceInDown");
-		$(".name-tag").attr("style","visibility: visible;");
+		$('.name-tag')
+			.addClass("active wow animated bounceInDown")
+			.attr("style","visibility: visible;")
+		;
 	});
-
-						 //  <input type="text" name="mail" class="question" id="nme" required autocomplete="off" />
-					  // <label for="nme"><span>Email</span></label>
-					  // <br><br>
-					  // <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
-					  // <label for="msg"><span>Message</span></label>
-					  // <input type="submit" value="submit" />
-
-
  	</script>
 </html>
