@@ -63,6 +63,8 @@
 	display: inline-block;
 }
 .pp-blurb-1 {
+	display: none;
+	/*visibility: hidden;*/
 	font-weight: bold;
 	border-style: solid;
 	border-width: 14px;
@@ -77,6 +79,8 @@
 	top: 110px;
 }
 .pp-blurb-2 {
+	display: none;
+	/*visibility: hidden;*/
 	font-weight: bold;
 	border-style: solid;
 	border-width: 14px;
@@ -90,12 +94,15 @@
 	left: 50px;
 	top: 110px;
 }
-#portfolio {
+.portfolio {
+	display:none;
+}
+#portfolio-bg {
 	position: relative;
 	top: 33%;
+	/*display: none;*/
 }
-
-@media screen and (max-width: 1680px) {
+@media (max-height: 1080px) and (max-width: 1680px) {
 	.portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
 		transform: scale(.60);
 	}
@@ -107,7 +114,7 @@
 	}
 }
 
-@media screen and (max-width: 1440px) {
+@media (max-height: 1080px) and (max-width: 1440px) {
 	.portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
 		transform: scale(.50);
 	}
@@ -122,7 +129,7 @@
 	}
 }
 
-@media screen and (max-width: 1101px) {
+@media (max-height: 1080px) and (max-width: 1101px) {
 	.portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
 		transform: scale(.50);
 	}

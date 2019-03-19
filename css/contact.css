@@ -7,6 +7,7 @@
 	border-radius: 20px;
     min-width: 1297px;
     overflow:hidden;
+    display:none;
 }
 
 #my-pic {
@@ -103,7 +104,7 @@
  
 
 
-@media screen and (max-width: 1680px) {
+@media (max-height: 1080px) and (max-width: 1680px) {
 	#contact-bg {
 	    min-width: 1100px;
 	}  
@@ -122,7 +123,7 @@
 		margin-right: 130px;
 	}
 }
-@media screen and (max-width: 1440px) {
+@media (max-height: 1080px) and (max-width: 1440px) {
 	#contact-bg {
 	    min-width: 900px;
 	}  
@@ -146,7 +147,7 @@
 	}
 
 }
-@media screen and (max-width: 1100px) {
+@media (max-height: 1080px) and (max-width: 1100px) {
 	#contact-bg {
 	    min-width: 600px;
 	}  
@@ -176,7 +177,7 @@
 		bottom: 30px;
 	}
 }
-@media screen and (max-width: 950px) {
+@media (max-height: 1080px) and (max-width: 950px) {
 	body {
 		overflow: none;
 	}
@@ -198,4 +199,9 @@
 		bottom: -10px;
 	}
 
+}
+@media (max-height: 795px) and (max-width: 1600px) {
+	.contact-bg {
+      min-width: 1100px;
+    }
 }

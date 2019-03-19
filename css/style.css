@@ -420,10 +420,51 @@ br {
 
 
 @media screen and (max-width: 1650px) {
-    #myBackground {
-      max-width: 1650px;
-    }
+
 }
+
+@media screen and (max-height: 884px) {
+    #myBackground {
+      max-width: 1790px;
+    }    
+    html {
+      zoom: 90%;
+    }
+    .portfolio {
+      zoom: 110%;
+      bottom: 60px;
+      position: relative;
+    }    
+}
+@media screen and (max-height: 795px) {
+    html {
+      zoom: 80%;
+    }
+    #myBackground {
+      max-width: 1790px;
+    }
+    .portfolio {
+      zoom: 130%;
+      bottom: 110px;
+      position: relative;
+    }
+    .pp-blurb-1 {
+      position: relative;
+      top: -30px;
+    }
+    .pp-blurb-2 {
+      position: relative;
+      top: -30px;
+    }
+    .skills-bg {
+      zoom: -20%;
+    }
+    
+}
+
+
+
+
 
 
 /*@media (max-width: 1665px) and (max-height: 930px) {
@@ -440,19 +481,17 @@ br {
     }
 }*/
 
-@media (max-width: 1440px) and (max-height: 780px) {
-    body {
-      zoom: 80%;
-    }
-/*    .container-1 {
-      transform: scale(.75);
+/*@media (max-width: 1440px) and (max-height: 780px) {
+
+    .container-1 {
+      zoom: 75%;
       position: relative;
       bottom: 20%;
     }
     #emblem-center {
       position: relative;
       top: 135px;
-      transform: scale(.9);
+      zoom: 90%;
     }
     #myBackground {
       max-width: 1560px;
@@ -460,8 +499,8 @@ br {
     .contact {
       position: relative;
       top: 60px;
-    }*/
-}
+    }
+}*/
 /*--------------------------specific devices--------------------------------*/
 
 /*ipad*/
