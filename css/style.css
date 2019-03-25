@@ -418,44 +418,42 @@ br {
     left: 55px;
 }
 
-/*@media screen and (max-height: 884px) {
+.wrap {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.inner {
+  align-self: center;
+}
+
+@media screen and (max-height: 884px) {
     #myBackground {
       max-width: 1790px;
-    }    
-    html {
+    }  
+    #myNav {
       zoom: 90%;
     }
-    .portfolio {
-      zoom: 110%;
-      bottom: 60px;
-      position: relative;
-    }    
 }
 @media screen and (max-height: 795px) {
-    html {
-      zoom: 80%;
-    }
     #myBackground {
       max-width: 1790px;
     }
-    .portfolio {
-      zoom: 130%;
-      bottom: 110px;
-      position: relative;
+    #myNav {
+      zoom: 80%;
+    }    
+}
+@media screen and (max-height: 710px) {
+    #myBackground {
+      max-width: 1790px;
     }
-    .pp-blurb-1 {
-      position: relative;
-      top: -30px;
-    }
-    .pp-blurb-2 {
-      position: relative;
-      top: -30px;
-    }
-    .skills-bg {
-      zoom: -20%;
-    }
-    
-}*/
+    #myNav {
+      zoom: 70%;
+    }    
+}
+
 
 @media screen and (max-width: 1650px) {
      #myBackground {
@@ -544,6 +542,7 @@ br {
       transform: scale(0.8);
     }     
 }
+
 /*@media (max-width: 1665px) and (max-height: 930px) {
     .container-1 {
       transform: scale(.9);

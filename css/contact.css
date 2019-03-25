@@ -3,7 +3,6 @@
 	position: relative;
 	background-color: white;
 	height: 700px;
-	top: 120px;
 	border-radius: 20px;
     min-width: 1297px;
     overflow:hidden;
@@ -102,7 +101,6 @@
 	text-align: center;	
 }
  
-
 
 /*@media (max-height: 1080px) and (max-width: 1680px) {
 	#contact-bg {

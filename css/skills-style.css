@@ -5,7 +5,6 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 	position: relative;
 	background-color: white;
 	height: 700px;
-	top: 120px;
 	border-radius: 20px;
     min-width: 1297px;
     overflow: hidden;

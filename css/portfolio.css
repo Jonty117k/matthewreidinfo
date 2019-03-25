@@ -71,8 +71,6 @@
 	height: 120px;
 	width: 500px;
 	border-radius: 5px;
-	left: 28%;
-	top: 110px;
 }
 .pp-blurb-2 {
 	display: none;
@@ -92,19 +90,13 @@
 }
 .portfolio {
 	display:none;
-vertical-align: middle;
-}
-#portfolio-bg {
 }
 
 .portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
     transform: scale(.70);
     position: relative;
-  	bottom: 50%;
 }
 
-.portfolio-mod {
-}
 /*@media (max-height: 1080px) and (max-width: 1680px) {
 	.portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
 		transform: scale(.60);
