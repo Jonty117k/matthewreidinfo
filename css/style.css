@@ -418,12 +418,7 @@ br {
     left: 55px;
 }
 
-
-@media screen and (max-width: 1650px) {
-
-}
-
-@media screen and (max-height: 884px) {
+/*@media screen and (max-height: 884px) {
     #myBackground {
       max-width: 1790px;
     }    
@@ -460,13 +455,95 @@ br {
       zoom: -20%;
     }
     
+}*/
+
+@media screen and (max-width: 1650px) {
+     #myBackground {
+      max-width: 1650px;
+    }
 }
 
 
+@media screen and (max-width: 1700px) {
+    .skills, .contact, .portfolio-mod {
+      transform: scale(0.85);
+    }
+    #emblem-center {
+      transform: scale(1.25);
+    }
+}
 
+@media screen and (max-width: 1600px) {
+    .skills, .contact, .portfolio-mod {
+      transform: scale(0.8);
+    }
+    #emblem-center {
+      transform: scale(1.2);
+    }    
+/*    .portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
+      transform: scale(.60);
+    }
+    .portfolio-piece-1 {
+      left: 100px;
+    }
+    .portfolio-piece-3 {
+      right: 100px;
+    }  */
 
+}
 
+@media screen and (max-width: 1500px) {
+    .skills, .contact, .portfolio-mod {
+      transform: scale(0.75);
+    }
+    .portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
+      transform: scale(.50);
+    }
+    .portfolio-mod {
+      transform: scale(0.75);
+    } 
+    #emblem-center {
+      transform: scale(1.1);
+    }     
+}
 
+@media screen and (max-width: 1400px) {
+    .skills, .contact, .portfolio-mod {
+      transform: scale(0.7);
+
+    }
+    .portfolio-mod {
+      transform: scale(0.70);
+    }  
+    #emblem-center {
+      transform: scale(1.0);
+    }    
+}
+
+@media screen and (max-width: 1200px) {
+    .skills, .contact, .portfolio-mod {
+      transform: scale(0.6);
+    }
+    .portfolio-mod {
+      transform: scale(0.6);
+    } 
+    #emblem-center {
+      transform: scale(.9);
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .skills, .contact, .portfolio-mod {
+      transform: scale(0.5);
+    }
+    .portfolio-mod {
+      transform: scale(0.5);
+    } 
+    #emblem-center {
+      transform: scale(0.8);
+    }     
+}
 /*@media (max-width: 1665px) and (max-height: 930px) {
     .container-1 {
       transform: scale(.9);

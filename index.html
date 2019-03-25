@@ -13,6 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
     <script src="js/wow.js"></script>
+    <script src="js/jquery.center.js"></script>
         <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -35,7 +36,7 @@
 				<div id="contactButton"></div>
 			</div>
 			<div class="box-3">
-				<a href="Resume.pdf" download="Resume.pdf">
+				<a href="Matthew_Reid_Developer_Resume.pdf" download="Resume.pdf">
 					<div id="resumeButton" src=""></div>
 				</a>
 				<a href="https://www.linkedin.com/in/matthew-reid-019a55182/">
@@ -109,7 +110,7 @@
 							<br><br>
 							<li class="contact-list"><div class="row"><img class="con-icon" src="images/email.png"><div class="c-t-1">Email</div><div class="c-t-2" style="margin-left: 25px;">mreid17k@gmail.com</div></div></li>
 							<br>
-							<li class="contact-list"><div class="row"><img class="con-icon" src="images/linkedin.png"><div class="c-t-1">LinkedIn</div><div class="c-t-2"><a id="linkedin-href" href="https://www.linkedin.com/in/matthew-reid-019a55182/">my linkedin</a></div></div></li>
+							<li class="contact-list"><div class="row"><img class="con-icon" src="images/linkedin.png"><div class="c-t-1">LinkedIn</div><div class="c-t-2"><a id="linkedin-href" href="https://www.linkedin.com/in/matthew-reid-019a55182/">Add Me On LinkedIn</a></div></div></li>
 							<br>
 							<li class="contact-list"><div class="row"><img class="con-icon" src="images/placeholder.png"><div class="c-t-1">Location</div><div class="c-t-2">Somerset, New Jersey</div></div></li>
 						</ul>	
@@ -148,6 +149,7 @@
 		</div> 
 	</div>
 	<!-- Portfolio modal -->
+	<div class="portfolio-mod">
 	<div class="row justify-content-center">
 		<div class="col-sm-6"></div>
 			<div class="portfolio">
@@ -172,7 +174,7 @@
 		</div>
 		<div class="col-4"></div>
 	</div>
-
+	</div>
 	<!-- background -->
 	<video autoplay muted loop id="myBackground">
 	  	<source src="video/mnt-range.mp4" type="video/mp4">
@@ -182,6 +184,7 @@
 <!--firebase -->
 <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
 <script type="text/javascript">
+
 
 	var vid = document.getElementById("myBackground");
 	vid.playbackRate = .25;
