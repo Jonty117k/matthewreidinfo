@@ -327,29 +327,32 @@ br {
   }
 }
 #webdev-tag {
-  position: relative;
+  position: fixed;
   font-family: 'Lobster', cursive;
   color: white;
   font-size: 34px;
   text-align: center;
   bottom: 130px;
-  right: 15px;
+  right: -24px;
+  width: 100%;
 }
 #circa-text {
-  position: relative;
+  position: fixed;
   font-family: 'Lobster', cursive;
   color: white;
   font-size: 24px;
   top: 245px;
   left: 240px;
+  width: 100%;
 }
 #date-text {
-  position: relative;
+  position: fixed;
   font-family: 'Lobster', cursive;
   color: white;
   font-size: 24px;
   top: 249px;
-  right: 250px;
+  right: 170px;
+  width: 100%;
 }
 
 #emblem-center {
@@ -364,8 +367,8 @@ br {
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
     align-self: center;
-    top: -30px;
-    right: -30px;
+    top: -30px;      
+    width: 50%;
 
 }
 .htmlOpenTag {

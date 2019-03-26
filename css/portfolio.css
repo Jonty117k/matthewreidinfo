@@ -90,12 +90,13 @@
 }
 .portfolio {
 	display:none;
-	margin: 1000px;
+	right: -20px;
 }
 
 .portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
     transform: scale(.70);
     position: relative;
+    right: -20px;
 }
 
 /*@media (max-height: 1080px) and (max-width: 1680px) {
