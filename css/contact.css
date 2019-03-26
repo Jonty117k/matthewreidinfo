@@ -7,6 +7,8 @@
     min-width: 1297px;
     overflow:hidden;
     display:none;
+    margin: 400px;
+    align-self: center;
 }
 
 #my-pic {
@@ -101,6 +103,7 @@
 	text-align: center;	
 }
  
+
 
 /*@media (max-height: 1080px) and (max-width: 1680px) {
 	#contact-bg {

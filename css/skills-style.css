@@ -8,7 +8,8 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 	border-radius: 20px;
     min-width: 1297px;
     overflow: hidden;
-    margin-right: 20px;
+    margin: 1000px;
+    align-self: center;
 }
 
 #skills-left-bg {

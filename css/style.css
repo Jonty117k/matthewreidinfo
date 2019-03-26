@@ -3,6 +3,10 @@ body {
 	background-color: black;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 br { 
   line-height: 150%;
@@ -350,8 +354,6 @@ br {
 
 #emblem-center {
   position: relative;
-  top: 205px;
-  left: 30px;
   min-width: 600px;
   transform: scale(1.3);
   -webkit-touch-callout: none; /* iOS Safari */
@@ -361,6 +363,10 @@ br {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+    align-self: center;
+    top: -30px;
+    right: -30px;
+
 }
 .htmlOpenTag {
   position: relative;
@@ -418,16 +424,6 @@ br {
     left: 55px;
 }
 
-.wrap {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-}
-
-.inner {
-  align-self: center;
-}
 
 @media screen and (max-height: 884px) {
     #myBackground {
@@ -463,30 +459,25 @@ br {
 
 
 @media screen and (max-width: 1700px) {
-    .skills, .contact, .portfolio-mod {
+    .skills, .contact, .portfolio {
       transform: scale(0.85);
     }
     #emblem-center {
       transform: scale(1.25);
     }
+    .portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
+      transform: scale(.60);
+    }  
 }
 
 @media screen and (max-width: 1600px) {
     .skills, .contact, .portfolio-mod {
       transform: scale(0.8);
     }
+
     #emblem-center {
       transform: scale(1.2);
     }    
-/*    .portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
-      transform: scale(.60);
-    }
-    .portfolio-piece-1 {
-      left: 100px;
-    }
-    .portfolio-piece-3 {
-      right: 100px;
-    }  */
 
 }
 
@@ -494,6 +485,7 @@ br {
     .skills, .contact, .portfolio-mod {
       transform: scale(0.75);
     }
+
     .portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
       transform: scale(.50);
     }

@@ -90,6 +90,7 @@
 }
 .portfolio {
 	display:none;
+	margin: 1000px;
 }
 
 .portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
