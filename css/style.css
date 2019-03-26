@@ -327,35 +327,33 @@ br {
   }
 }
 #webdev-tag {
-  position: fixed;
+  position: relative;
   font-family: 'Lobster', cursive;
   color: white;
   font-size: 34px;
   text-align: center;
   bottom: 130px;
-  right: -24px;
-  width: 100%;
+  right: 20px;
 }
 #circa-text {
-  position: fixed;
+  position: relative;
   font-family: 'Lobster', cursive;
   color: white;
   font-size: 24px;
   top: 245px;
   left: 240px;
-  width: 100%;
 }
 #date-text {
-  position: fixed;
+  position: relative;
   font-family: 'Lobster', cursive;
   color: white;
   font-size: 24px;
   top: 249px;
-  right: 170px;
-  width: 100%;
+  right: 255px;
 }
 
 #emblem-center {
+  overflow:  hidden;
   position: relative;
   min-width: 600px;
   transform: scale(1.3);
@@ -367,9 +365,8 @@ br {
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
     align-self: center;
-    top: -30px;      
-    width: 50%;
-
+    top: -30px;  
+    left: 80px;    
 }
 .htmlOpenTag {
   position: relative;
@@ -460,7 +457,6 @@ br {
     }
 }
 
-
 @media screen and (max-width: 1700px) {
     .skills, .contact, .portfolio {
       transform: scale(0.85);
@@ -488,7 +484,6 @@ br {
     .skills, .contact, .portfolio-mod {
       transform: scale(0.75);
     }
-
     .portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
       transform: scale(.50);
     }
