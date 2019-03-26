@@ -4,10 +4,11 @@
 	background-color: white;
 	height: 700px;
 	border-radius: 20px;
-    min-width: 1297px;
+    min-width: 1100px;
     overflow:hidden;
     display:none;
     margin: 400px;
+    right: -20px;
     align-self: center;
 }
 
@@ -16,7 +17,7 @@
 	top: 70px;
 	height: 230px;
 	border-radius: 5px;
-	left: 125px;
+	left: 145px;
 
 }
 .about {
