@@ -626,7 +626,10 @@ br {
     }
     .portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
       zoom: 90%;
-    }  
+    } 
+    #myBackground {
+      zoom:85%;
+    }
 }
 
 @media screen and (max-width: 1600px) {
@@ -654,7 +657,10 @@ br {
     }     
     #emblem-center {
       transform: scale(1.1);
-    }     
+    }
+    #myBackground {
+      zoom:75%;
+    }         
 }
 
 @media screen and (max-width: 1400px) {
