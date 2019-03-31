@@ -167,7 +167,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 #skills-image {
 	position: relative;
 	height: 500px;
-	left: 309px;
+	left: 310px;
 	bottom: 720px;
 	opacity: .8;
   z-indexwebkit-touch-callout: none; /* iOS Safari */
@@ -178,93 +178,3 @@ html, body {margin: 0; height: 100%; overflow: hidden}
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
-
-/*@media (max-height: 1080px) and (max-width: 1680px)  {
-	#skills-bg {
-	    min-width: 1100px;
-	}  
-	#gears-gif {
-		height: 200px;
-		bottom: 575px;
-		left: 580px;
-	}
-	#skills-image {
-		height: 400px;
-		left: 279px;
-		bottom: 623px;
-	}
-	.code-list {
-		left: 270px;
-	}
-}
-@media (max-height: 1080px) and (max-width: 1430px) {
-	#skills-bg {
-	    min-width: 900px;
-	}  
-	#gears-gif {
-		height: 200px;
-		bottom: 515px;
-		left: 420px;
-	}
-	#skills-image {
-		height: 340px;
-		left: 204px;
-		bottom: 556px;
-		transform: scaleX(.7);
-	}
-	.code-list {
-		left: 155px;
-	}
-	#mySkills-blurb {
-		font-size: 20px;
-	}
-}
-
-@media (max-height: 1080px) and (max-width: 1100px) {
-	#skills-bg {
-	    min-width: 600px;
-	}  
-	#gears-gif {
-		height: 60px;
-		visibility: hidden;
-	}
-	#skills-image {
-		visibility: hidden;
-	}
-	.code-list {
-		left: 80px;
-	}
-}
-@media (max-height: 1080px) and (max-width: 950px) {
-	#skills-bg {
-	    min-width: 100%;
-	}  
-	#gears-gif {
-		height: 60px;
-		visibility: hidden;
-	}
-	#skills-image {
-		visibility: hidden;
-	}
-	.code-list {
-		right: 200px;
-	}
-}*/
-
-/*@media (max-width: 1200px) and (max-height: 650px) {
-	.contact {
-		transform: scale(.65);
-		position: relative;
-		bottom: 18%;
-	}	
-	.skills {
-		transform: scale(.65);
-		position: relative;
-		bottom: 18%;
-	}		
-}*/
-/*@media (max-height: 795px) and (max-width: 1600px) {
-	.skills-bg {
-      min-width: 1301px;
-    }
-}*/

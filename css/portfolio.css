@@ -95,47 +95,13 @@
     transform: scale(.70);
     position: relative;
     right: -20px;
+    bottom: 50px;
 }
 
-/*@media (max-height: 1080px) and (max-width: 1680px) {
-	.portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
-		transform: scale(.60);
-	}
-	.portfolio-piece-1 {
-		left: 100px;
-	}
-	.portfolio-piece-3 {
-		right: 100px;
-	}
+a *,
+a *:before,
+a *:after {
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
 }
-
-@media (max-height: 1080px) and (max-width: 1440px) {
-	.portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
-		transform: scale(.50);
-	}
-	.portfolio-piece-1 {
-		left: 180px;
-	}
-	.portfolio-piece-3 {
-		right: 180px;
-	}
-	.pp-blurb-2 {
-
-	}
-}
-
-@media (max-height: 1080px) and (max-width: 1101px) {
-	.portfolio-piece-1, .portfolio-piece-2, .portfolio-piece-3 {
-		transform: scale(.50);
-	}
-	.portfolio-piece-1 {
-		left: 230px;
-	}
-	.portfolio-piece-3 {
-		right: 230px;
-	}
-	#emblem-center {
-		transform: scale(1.1);
-	}
-}
-*/

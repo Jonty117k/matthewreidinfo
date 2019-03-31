@@ -117,13 +117,13 @@
 					<div id="skills-right-bg" class="col-6">
 					<div id="message-me-title">About Me</div>
 						<img id="my-pic" src="images/personalpic.png">
-						<div class="about" id="about-top">• I'm born and raised in central Jersey. I did my undergrad at RIT.</div>
+						<div class="about" id="about-top">I'm born and raised in central Jersey. I did my undergrad at RIT.</div>
 						<br>
-						<div class="about">• I love music. When I'm not working I'm playing, writing, or listening.</div>
+						<div class="about">I love music. When I'm not working I'm playing, writing, or listening.</div>
 						<br>
-						<div class="about">• I also love hiking, listening to audiobooks, watching reruns of The Office (seasons 2-6), cooking funny-looking things, and drinking tea.</div>
+						<div class="about">I also love hiking, listening to audiobooks, watching reruns of The Office (seasons 2-6), cooking funny-looking things, and drinking tea.</div>
 						<br>
-						<div class="about">• I'm in a tumultuous relationship with my New York Mets.</div>
+						<div class="about">I'm in a tumultuous relationship with my New York Mets.</div>
 					</div>
 				</div>
 			</div>
@@ -152,8 +152,12 @@
 		<div class="col-sm-6"></div>
 			<div class="portfolio">
 				<div id="portfolio-bg" class="flex-column" style="white-space: nowrap;">
-				<a href="https://chord-runner-1.firebaseapp.com/"><img class="portfolio-piece-1"></img></a>
-				<img class="portfolio-piece-2"></img>
+				<span tooltip="GetItDone is a weekly planner web application using Firebase and React." flow="down">
+					<a href="https://chord-runner-1.firebaseapp.com/"><img class="portfolio-piece-1"></a>
+				</span>
+				<span tooltip="TheDispatch_ is a news aggregator web application using Ajax and Jquery." flow="down">
+					<img class="portfolio-piece-2"></img>
+				</span>
 				<img class="portfolio-piece-3"></img>
 				</div>
 			</div>
@@ -161,14 +165,14 @@
 	</div>
 	<div class="row justify-content-center">
 		<div class="col-4">
-			<div class="pp-blurb-1">
+<!-- 			<div class="pp-blurb-1">
 				GetItDone is a weekly planner web application using Firebase and React. You can create an account and login anywhere to add tasks you need to complete each day of the week.
-			</div>
+			</div> -->
 		</div>
 		<div class="col-4">
-			<div class="pp-blurb-2">
+<!-- 			<div class="pp-blurb-2">
 				TheDispatch_ is a news aggregator web application. You can subscribe to news feeds such the New York Times and ESPN and api calls will return the latest news to your feed for you to read.
-			</div>
+			</div> -->
 		</div>
 		<div class="col-4"></div>
 	</div>
@@ -187,6 +191,8 @@
 	vid.playbackRate = .25;
 
 	new WOW().init();
+
+
 
 	$('.portfolio-piece-1').mouseenter(function(){
 		$('.pp-blurb-1')
@@ -212,6 +218,10 @@
 			.css('display', 'none')
 		;
 	});	
+
+
+
+
 	$('#skillsButton').on('click', function(){
 		$('.active, #emblem-center')
 			.hide()

@@ -18,7 +18,7 @@
 	top: 70px;
 	height: 230px;
 	border-radius: 5px;
-	left: 145px;
+	left: 130px;
 
 }
 .about {
@@ -105,100 +105,3 @@
 	text-align: center;	
 }
  
-
-
-/*@media (max-height: 1080px) and (max-width: 1680px) {
-	#contact-bg {
-	    min-width: 1100px;
-	}  
-	#div-line {
-		left: 19%;
-		width: 350px;
-	}
-	#my-pic {
-		left: 85px;
-	}
-	.about {
-		left: 65px;
-		margin-right: 130px;
-	}
-}
-@media (max-height: 1080px) and (max-width: 1440px) {
-	#contact-bg {
-	    min-width: 900px;
-	}  
-	#div-line {
-		left: 20%;
-		top: 330px;
-		width: 300px;
-	}
-	#contact-blurb {
-		margin-right: 50px;
-		margin-left: 50px;
-	}
-	#my-pic {
-		left: 45px;
-	}
-	.about {
-		font-size: 15px;
-	}
-
-}
-@media (max-height: 1080px) and (max-width: 1100px) {
-	#contact-bg {
-	    min-width: 600px;
-	}  
-	.question {
-		bottom: -10px;
-	}
-	#my-pic {
-		left: 35px;
-		height: 180px;
-	}
-	#div-line {
-		visibility: hidden;
-	}
-	#contact-title {
-		font-size: 60px;
-	}
-	#message-me-title {
-		font-size: 30px;
-		right: 10px;
-	}	
-	#contact-blurb {
-		margin-right: 50px;
-		margin-left: 50px;
-	}
-	.contact-list {
-		position: relative;
-		bottom: 30px;
-	}
-}
-@media (max-height: 1080px) and (max-width: 950px) {
-	body {
-		overflow: none;
-	}
-	#my-pic {
-		left: 75px;
-	}
-	#contact-bg {
-	    min-width: 100%;
-	}  
-	.code-list {
-		left: 30%;
-	}
-	.container-1 {
-	  display: flex;
-	  flex-wrap: wrap;
-	  visibility: hidden;
-	}
-	.email-form {
-		bottom: -10px;
-	}
-
-}
-@media (max-height: 795px) and (max-width: 1600px) {
-	.contact-bg {
-      min-width: 1100px;
-    }
-*/
